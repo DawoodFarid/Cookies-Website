@@ -48,6 +48,33 @@
             z-index: 9999;
             opacity: .5;
         }
+        /* ─── NAVBAR ─── */
+    .navbar {
+      background: rgba(253,246,236,0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(200,131,58,.18);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem;
+      font-weight: 900;
+      color: var(--mid) !important;
+      letter-spacing: -0.02em;
+    }
+    .navbar-brand span { color: var(--caramel); }
+    .nav-link {
+      color: var(--mid) !important;
+      font-weight: 500;
+      font-size: .92rem;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: .4rem 1rem !important;
+      transition: color .2s;
+    }
 
     <body >
     <!-- ═══════════════ NAVBAR ═══════════════ -->
