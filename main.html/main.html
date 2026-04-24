@@ -453,6 +453,23 @@ navMenu" aria-label="Toggle navigation">
                     e.target.classList.add('visible');
                     io.unobserve(e.target);
                 }
+            });
+        }, { threshold: 0.12 });
+        reveals.forEach(el => io.observe(el));
+
+        // ── Add to cart click feedback ──
+        document.querySelectorAll('.btn-add').forEach(btn => {
+            btn.addEventListener('click', function () {
+                const orig = this.innerHTML;
+                this.innerHTML = '<i class="bi bi-check2"></i> Added!';
+                this.style.background = '#2a7a2a';
+                setTimeout(() => {
+                    this.innerHTML = orig;
+                    this.style.background = '';
+                }, 1500);
+            });
+        });
+
 
 </body >
 </html >
