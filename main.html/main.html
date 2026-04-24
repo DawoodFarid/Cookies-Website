@@ -478,6 +478,106 @@
         font-size: .82rem;
         box-shadow: 0 8px 30px rgba(0,0,0,.35);
     }
+        .about-badge strong {
+            display: block;
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            color: var(--accent);
+            line-height: 1;
+        }
+
+    .about-feature {
+        display: flex;
+        align-items: flex-start;
+        gap: .9rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .about-feature-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: var(--light);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        flex-shrink: 0;
+    }
+
+    .about-feature h6 {
+        font-weight: 700;
+        margin-bottom: .2rem;
+        color: var(--mid);
+    }
+
+    .about-feature p {
+        font-size: .88rem;
+        color: #6b4c28;
+        line-height: 1.6;
+    }
+    /* ─── MENU ─── */
+    .menu-section {
+        background: var(--cream);
+    }
+
+    .cookie-card {
+        background: var(--white);
+        border-radius: 24px;
+        overflow: hidden;
+        transition: transform .35s cubic-bezier(.23,1,.32,1), box-shadow .35s;
+        border: 1px solid rgba(200,131,58,.1);
+        height: 100%;
+    }
+
+        .cookie-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 24px 60px rgba(200,131,58,.2);
+        }
+
+    .cookie-card-img {
+        height: 200px;
+        background: linear-gradient(135deg, #3D2003 0%, #6b3410 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5.5rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .cookie-card-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 30% 30%, rgba(232,164,74,.15), transparent);
+        }
+
+    .cookie-badge {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        background: var(--caramel);
+        color: var(--white);
+        font-size: .7rem;
+        font-weight: 700;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        padding: .25rem .7rem;
+        border-radius: 50px;
+    }
+
+    .cookie-card-body {
+        padding: 1.5rem;
+    }
+
+        .cookie-card-body h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--mid);
+            margin-bottom: .3rem;
+        }
 
     <body >
     <!-- ═══════════════ NAVBAR ═══════════════ -->
