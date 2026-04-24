@@ -470,7 +470,21 @@ navMenu" aria-label="Toggle navigation">
             });
         });
 
+        // ── Subscribe button feedback ──
+        document.querySelector('.newsletter-section .btn-primary-custom').addEventListener('click', function () {
+            const input = document.querySelector('.newsletter-input');
+            if (input.value.includes('@')) {
+                this.innerHTML = '✓ You\'re In!';
+                this.style.background = '#2a7a2a';
+                input.value = '';
+            } else {
+                input.style.borderColor = '#c84040';
+                setTimeout(() => input.style.borderColor = '', 1500);
+            }
+        });
+    </script>
+</body>
+</html>
 
-</body >
-</html >
+
 
