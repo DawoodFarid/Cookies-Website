@@ -291,7 +291,33 @@
         margin: auto;
         position: relative;
     }
+        .hero-plate::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: conic-gradient(var(--caramel) 0%, transparent 30%, var(--accent) 60%, transparent 80%, var(--caramel) 100%);
+            z-index: -1;
+            opacity: .35;
+            animation: spinSlow 12s linear infinite;
+        }
 
+    @keyframes spinSlow {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .hero-stat {
+        position: absolute;
+        background: rgba(253,246,236,.08);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(253,246,236,.12);
+        border-radius: 16px;
+        padding: .8rem 1.2rem;
+        color: var(--cream);
+        font-size: .85rem;
+    }
 
     <body >
     <!-- ═══════════════ NAVBAR ═══════════════ -->
