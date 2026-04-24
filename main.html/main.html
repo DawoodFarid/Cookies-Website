@@ -1,452 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrumbLux – Artisan Cookies</title>
 
     <!-- Optional: Link CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 </head>
-<body>
 
+<style>
+    :root {
+        --cream: #FDF6EC;
+        --caramel: #C8833A;
+        --dark: #1C1009;
+        --mid: #3D2003;
+        --accent: #E8A44A;
+        --light: #F5E6CC;
+        --white: #FFFDF9;
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    <body >
     <!-- ═══════════════ NAVBAR ═══════════════ -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">Crumb<span>Lux</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=" #
-navMenu" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Our Story</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="nav-link btn-nav" href="#order">Order Now</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <nav class="navbar navbar-expand-lg" >
+    <div class="container" >
+    <a class="navbar-brand" href="#" > Crumb<span > Lux</span > </a >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=" #
+    navMenu" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" > </span >
+    </button >
+    <div class="collapse navbar-collapse" id="navMenu" >
+    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1" >
+    <li class="nav-item" > <a class="nav-link" href="#menu" > Menu</a > </li >
+    <li class="nav-item" > <a class="nav-link" href="#about" > Our Story</a > </li >
+    <li class="nav-item" > <a class="nav-link" href="#process" > Process</a > </li >
+    <li class="nav-item" > <a class="nav-link" href="#testimonials" > Reviews</a > </li >
+    <li class="nav-item ms-lg-3" >
+    <a class="nav-link btn-nav" href="#order" > Order Now</a >
+    </li >
+    </ul >
+    </div >
+    </div >
+    </nav >
     <!-- ═══════════════ HERO ═══════════════ -->
-    <section class="hero" id="home">
-        <div class="hero-bg-pattern"></div>
-        <div class="hero-circle"></div>
-        <div class="hero-circle"></div>
-        <div class="hero-circle"></div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 hero-content">
-                    <span class="hero-tag">🍪 Handcrafted Since 2010</span>
-                    <h1>Baked With <em>Love,</em><br>Eaten With Joy.</h1>
-                    <p>Artisan cookies crafted from the finest ingredients. Every bite is a warm hug — irresistibly golden, perfectly chewy, unforgettably delicious.</p>
-                    <div class="hero-btns d-flex flex-wrap gap-3">
-                        <a href="#menu" class="btn-primary-custom">Explore Our Menu <i class="bi bi-arrow-right"></i></a>
-                        <a href="#about" class="btn-ghost-custom"><i class="bi bi-play-circle"></i> Our Story</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <div class="hero-image-wrap">
-                        <div class="hero-plate position-relative">
-                            🍪
-                            <div class="hero-stat">
-                                <strong>4.9★</strong>
-                                Avg. Rating
-                            </div>
-                            <div class="hero-stat">
-                                <strong>50K+</strong>
-                                Happy Bites
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <section class="hero" id="home" >
+    <div class="hero-bg-pattern" > </div >
+    <div class="hero-circle" > </div >
+    <div class="hero-circle" > </div >
+    <div class="hero-circle" > </div >
+    <div class="container" >
+    <div class="row align-items-center" >
+    <div class="col-lg-6 hero-content" >
+    <span class="hero-tag" > 🍪 Handcrafted Since 2010</span >
+    <h1 > Baked With <em > Love, </em > <br > Eaten With Joy.</h1 >
+    <p > Artisan cookies crafted from the finest ingredients. Every bite is a warm hug — irresistibly golden, perfectly chewy, unforgettably delicious.</p >
+    <div class="hero-btns d-flex flex-wrap gap-3" >
+    <a href="#menu" class="btn-primary-custom" > Explore Our Menu <i class="bi bi-arrow-right" > </i > </a >
+    <a href="#about" class="btn-ghost-custom" > <i class="bi bi-play-circle" > </i > Our Story</a >
+    </div >
+    </div >
+    <div class="col-lg-6 mt-5 mt-lg-0" >
+    <div class="hero-image-wrap" >
+    <div class="hero-plate position-relative" >
+    🍪
+    <div class="hero-stat" >
+    <strong > 4.9★</strong >
+    Avg. Rating
+    </div >
+    <div class="hero-stat" >
+    <strong > 50K + </strong >
+    Happy Bites
+    </div >
+    </div >
+    </div >
+    </div >
+    </div >
+    </div >
+    </section >
     <!-- ═══════════════ MARQUEE ═══════════════ -->
-    <div class="marquee-strip">
-        <div class="marquee-inner">
-            <!-- doubled for seamless loop -->
-            <span class="marquee-item">🍪 Classic Chocolate Chip</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🥜 Peanut Butter Bliss</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🍋 Lemon Zest Dream</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🫐 Blueberry Burst</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🌰 Hazelnut Heaven</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🍓 Strawberry Swirl</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🍪 Classic Chocolate Chip</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🥜 Peanut Butter Bliss</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🍋 Lemon Zest Dream</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🫐 Blueberry Burst</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🌰 Hazelnut Heaven</span><span class="marquee-dot">✦</span>
-            <span class="marquee-item">🍓 Strawberry Swirl</span><span class="marquee-dot">✦</span>
-        </div>
-    </div>
+    <div class="marquee-strip" >
+    <div class="marquee-inner" >
+    <!-- doubled for seamless loop -->
+    <span class="marquee-item" > 🍪 Classic Chocolate Chip</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🥜 Peanut Butter Bliss</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🍋 Lemon Zest Dream</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🫐 Blueberry Burst</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🌰 Hazelnut Heaven</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🍓 Strawberry Swirl</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🍪 Classic Chocolate Chip</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🥜 Peanut Butter Bliss</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🍋 Lemon Zest Dream</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🫐 Blueberry Burst</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🌰 Hazelnut Heaven</span > <span class="marquee-dot" > ✦</span >
+    <span class="marquee-item" > 🍓 Strawberry Swirl</span > <span class="marquee-dot" > ✦</span >
+    </div >
+    </div >
     <!-- ═══════════════ ABOUT ═══════════════ -->
-    <section class="about-section" id="about">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-5 reveal">
-                    <div class="about-img-wrap position-relative">
-                        <div class="about-emoji-box">🧁</div>
-                        <div class="about-badge">
-                            <strong>14</strong>
-                            Years of <br>Baking Magic
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7 reveal">
-                    <p class="section-eyebrow">Our Story</p>
-                    <h2 class="section-title">More Than a Cookie —<br>It's a <em>Moment.</em></h2>
-                    <div class="divider"></div>
-                    <p class="mb-4" style="color:#6b4c28;line-height:1.8;">CrumbLux started in a small kitchen with a big dream: to bake cookies so good, they stop time. Every recipe is passed down with love, refined with science, and finished with soul.</p>
-                    <div class="about-feature">
-                        <div class="about-feature-icon">🌾</div>
-                        <div>
-                            <h6>Premium Ingredients</h6>
-                            <p>Only organic flour, real butter, and ethically-sourced chocolate make it into our dough.</p>
-                        </div>
-                    </div>
-                    <div class="about-feature">
-                        <div class="about-feature-icon">🔥</div>
-                        <div>
-                            <h6>Stone-Oven Baked</h6>
-                            <p>Every batch baked in our traditional stone ovens for that perfect golden crust and chewy center.</p>
-                        </div>
-                    </div>
-                    <div class="about-feature">
-                        <div class="about-feature-icon">📦</div>
-                        <div>
-                            <h6>Same-Day Delivery</h6>
-                            <p>Fresh from oven to your door within hours — because great cookies shouldn't wait.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <section class="about-section" id="about" >
+    <div class="container" >
+    <div class="row align-items-center g-5" >
+    <div class="col-lg-5 reveal" >
+    <div class="about-img-wrap position-relative" >
+    <div class="about-emoji-box" > 🧁</div >
+    <div class="about-badge" >
+    <strong > 14</strong >
+    Years of <br > Baking Magic
+    </div >
+    </div >
+    </div >
+    <div class="col-lg-7 reveal" >
+    <p class="section-eyebrow" > Our Story</p >
+    <h2 class="section-title" > More Than a Cookie —<br > It's a <em>Moment.</em></h2>
+    <div class="divider" > </div >
+    <p class="mb-4" style="color:#6b4c28;line-height:1.8;" > CrumbLux started in a small kitchen with a big dream: to bake cookies so good, they stop time. Every recipe is passed down with love, refined with science, and finished with soul.</p >
+    <div class="about-feature" >
+    <div class="about-feature-icon" > 🌾</div >
+    <div >
+    <h6 > Premium Ingredients</h6 >
+    <p > Only organic flour, real butter, and ethically-sourced chocolate make it into our dough.</p >
+    </div >
+    </div >
+    <div class="about-feature" >
+    <div class="about-feature-icon" > 🔥</div >
+    <div >
+    <h6 > Stone-Oven Baked</h6 >
+    <p > Every batch baked in our traditional stone ovens for that perfect golden crust and chewy center.</p >
+    </div >
+    </div >
+    <div class="about-feature" >
+    <div class="about-feature-icon" > 📦</div >
+    <div >
+    <h6 > Same-Day Delivery</h6 >
+    <p > Fresh from oven to your door within hours — because great cookies shouldn't wait.</p>
+    </div >
+    </div >
+    </div >
+    </div >
+    </div >
+    </section >
     <!-- ═══════════════ STATS ═══════════════ -->
-    <div class="stats-section">
-        <div class="container">
-            <div class="row justify-content-center align-items-center text-center g-4">
-                <div class="col-6 col-md-3 stat-item reveal">
-                    <div class="stat-num">50K+</div>
-                    <p>Cookies Baked</p>
-                </div>
-                <div class="col-1 d-none d-md-block"><div class="stat-divider mx-auto"></div></div>
-                <div class="col-6 col-md-3 stat-item reveal">
-                    <div class="stat-num">12K+</div>
-                    <p>Happy Customers</p>
-                </div>
-                <div class="col-1 d-none d-md-block"><div class="stat-divider mx-auto"></div></div>
-                <div class="col-6 col-md-3 stat-item reveal">
-                    <div class="stat-num">24+</div>
-                    <p>Flavors Available</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="stats-section" >
+    <div class="container" >
+    <div class="row justify-content-center align-items-center text-center g-4" >
+    <div class="col-6 col-md-3 stat-item reveal" >
+    <div class="stat-num" > 50K + </div >
+    <p > Cookies Baked</p >
+    </div >
+    <div class="col-1 d-none d-md-block" > <div class="stat-divider mx-auto" > </div > </div >
+    <div class="col-6 col-md-3 stat-item reveal" >
+    <div class="stat-num" > 12K + </div >
+    <p > Happy Customers</p >
+    </div >
+    <div class="col-1 d-none d-md-block" > <div class="stat-divider mx-auto" > </div > </div >
+    <div class="col-6 col-md-3 stat-item reveal" >
+    <div class="stat-num" > 24 + </div >
+    <p > Flavors Available</p >
+    </div >
+    </div >
+    </div >
+    </div >
     <!-- ═══════════════ MENU ═══════════════ -->
-    <section class="menu-section" id="menu">
-        <div class="container">
-            <div class="text-center mb-5 reveal">
-                <p class="section-eyebrow">Our Menu</p>
-                <h2 class="section-title">Pick Your <em>Obsession</em></h2>
-                <div class="divider mx-auto"></div>
-            </div>
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-12 col-sm-6 col-lg-4 reveal">
-                    <div class="cookie-card">
-                        <div class="cookie-card-img">
-                            🍪
-                            <span class="cookie-badge">Bestseller</span>
-                        </div>
-                        <div class="cookie-card-body">
-                            <div class="stars">★★★★★</div>
-                            <h5>Classic Choco Chip</h5>
-                            <p>Gooey dark chocolate melted into golden dough — the cookie that started it all.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="cookie-price">$3.99 <span>/ piece</span></div>
-                                <button class="btn-add"><i class="bi bi-plus"></i> Add</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-12 col-sm-6 col-lg-4 reveal">
-                    <div class="cookie-card">
-                        <div class="cookie-card-img" style="background:linear-gradient(135deg,#2a3d10,#5a8020);">
-                            🥜
-                            <span class="cookie-badge" style="background:#5a8020;">Fan Fave</span>
-                        </div>
-                        <div class="cookie-card-body">
-                            <div class="stars">★★★★★</div>
-                            <h5>Peanut Butter Dream</h5>
-                            <p>Rich, nutty, and melt-in-mouth — creamy peanut butter in every single crumb.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="cookie-price">$4.49 <span>/ piece</span></div>
-                                <button class="btn-add"><i class="bi bi-plus"></i> Add</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-12 col-sm-6 col-lg-4 reveal">
-                    <div class="cookie-card">
-                        <div class="cookie-card-img" style="background:linear-gradient(135deg,#2a1a5a,#6030b0);">
-                            🫐
-                            <span class="cookie-badge" style="background:#6030b0;">New</span>
-                        </div>
-                        <div class="cookie-card-body">
-                            <div class="stars">★★★★☆</div>
-                            <h5>Blueberry Burst</h5>
-                            <p>Juicy wild blueberries folded into vanilla cream dough — bright and refreshing.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="cookie-price">$4.79 <span>/ piece</span></div>
-                                <button class="btn-add"><i class="bi bi-plus"></i> Add</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="col-12 col-sm-6 col-lg-4 reveal">
-                    <div class="cookie-card">
-                        <div class="cookie-card-img" style="background:linear-gradient(135deg,#4a2800,#b06020);">
-                            🌰
-                            <span class="cookie-badge" style="background:#8b4500;">Premium</span>
-                        </div>
-                        <div class="cookie-card-body">
-                            <div class="stars">★★★★★</div>
-                            <h5>Hazelnut Heaven</h5>
-                            <p>Roasted hazelnut swirls inside rich brownie dough — sheer luxury in every bite.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="cookie-price">$5.29 <span>/ piece</span></div>
-                                <button class="btn-add"><i class="bi bi-plus"></i> Add</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="menu-section" id="menu" >
+    <div class="container" >
+    <div class="text-center mb-5 reveal" >
+    <p class="section-eyebrow" > Our Menu</p >
+    <h2 class="section-title" > Pick Your <em > Obsession</em > </h2 >
+    <div class="divider mx-auto" > </div >
+    </div >
+    <div class="row g-4" >
+    <!-- Card 1 -->
+    <div class="col-12 col-sm-6 col-lg-4 reveal" >
+    <div class="cookie-card" >
+    <div class="cookie-card-img" >
+    🍪
+    <span class="cookie-badge" > Bestseller</span >
+    </div >
+    <div class="cookie-card-body" >
+    <div class="stars" > ★★★★★</div >
+    <h5 > Classic Choco Chip</h5 >
+    <p > Gooey dark chocolate melted into golden dough — the cookie that started it all.</p >
+    <div class="d-flex justify-content-between align-items-center" >
+    <div class="cookie-price" > $3.99 <span > / piece</span > </div >
+    <button class="btn-add" > <i class="bi bi-plus" > </i > Add</button >
+    </div >
+    </div >
+    </div >
+    </div >
+    <!-- Card 2 -->
+    <div class="col-12 col-sm-6 col-lg-4 reveal" >
+    <div class="cookie-card" >
+    <div class="cookie-card-img" style="background:linear-gradient(135deg,#2a3d10,#5a8020);" >
+    🥜
+    <span class="cookie-badge" style="background:#5a8020;" > Fan Fave</span >
+    </div >
+    <div class="cookie-card-body" >
+    <div class="stars" > ★★★★★</div >
+    <h5 > Peanut Butter Dream</h5 >
+    <p > Rich, nutty, and melt-in-mouth — creamy peanut butter in every single crumb.</p >
+    <div class="d-flex justify-content-between align-items-center" >
+    <div class="cookie-price" > $4.49 <span > / piece</span > </div >
+    <button class="btn-add" > <i class="bi bi-plus" > </i > Add</button >
+    </div >
+    </div >
+    </div >
+    </div >
+    <!-- Card 3 -->
+    <div class="col-12 col-sm-6 col-lg-4 reveal" >
+    <div class="cookie-card" >
+    <div class="cookie-card-img" style="background:linear-gradient(135deg,#2a1a5a,#6030b0);" >
+    🫐
+    <span class="cookie-badge" style="background:#6030b0;" > New</span >
+    </div >
+    <div class="cookie-card-body" >
+    <div class="stars" > ★★★★☆</div >
+    <h5 > Blueberry Burst</h5 >
+    <p > Juicy wild blueberries folded into vanilla cream dough — bright and refreshing.</p >
+    <div class="d-flex justify-content-between align-items-center" >
+    <div class="cookie-price" > $4.79 <span > / piece</span > </div >
+    <button class="btn-add" > <i class="bi bi-plus" > </i > Add</button >
+    </div >
+    </div >
+    </div >
+    </div >
+    <!-- Card 4 -->
+    <div class="col-12 col-sm-6 col-lg-4 reveal" >
+    <div class="cookie-card" >
+    <div class="cookie-card-img" style="background:linear-gradient(135deg,#4a2800,#b06020);" >
+    🌰
+    <span class="cookie-badge" style="background:#8b4500;" > Premium</span >
+    </div >
+    <div class="cookie-card-body" >
+    <div class="stars" > ★★★★★</div >
+    <h5 > Hazelnut Heaven</h5 >
+    <p > Roasted hazelnut swirls inside rich brownie dough — sheer luxury in every bite.</p >
+    <div class="d-flex justify-content-between align-items-center" >
+    <div class="cookie-price" > $5.29 <span > / piece</span > </div >
+    <button class="btn-add" > <i class="bi bi-plus" > </i > Add</button >
+    </div >
+    </div >
+    </div >
+    </div >
+    <!-- Card 5 -->
+    <div class="col-12 col-sm-6 col-lg-4 reveal" >
+    <div class="cookie-card" >
+    <div class="cookie-card-img" style="background:linear-gradient(135deg,#3a1a00,#c87020);" >
+    🍋
+    </div >
+    <div class="cookie-card-body" >
+    <div class="stars" > ★★★★☆</div >
+    <h5 > Lemon Zest Dream</h5 >
+    <p > Zingy lemon curd meets buttery shortbread — sunshine in every single bite.</p >
+    <div class="d-flex justify-content-between align-items-center" >
+    <div class="cookie-price" > $3.89 <span > / piece</span > </div >
+    <button class="btn-add" > <i class="bi bi-plus" > </i > Add</button >
+    </div >
+    </div >
+    </div >
+    </div >
+    <!-- Card 6 -->
+    <div class="col-12 col-sm-6 col-lg-4 reveal" >
+    <div class="cookie-card" >
+    <div class="cookie-card-img" style="background:linear-gradient(135deg,#4a0020,#c02060);" >
+    🍓
+    <span class="cookie-badge" style="background:#c02060;" > Limited</span >
+    </div >
+    <div class="cookie-card-body" >
+    <div class="stars" > ★★★★★</div >
+    <h5 > Strawberry Swirl</h5 >
+    <p > Real strawberry jam ribboned through white chocolate chip cookie dough. Pure bliss.</p >
+    <div class="d-flex justify-content-between align-items-center" >
+    <div class="cookie-price" > $4.99 <span > / piece</span > </div >
+    <button class="btn-add" > <i class="bi bi-plus" > </i > Add</button >
+    </div >
+    </div >
+    </div >
+    </div >
 
-                <!-- Card 5 -->
-                <div class="col-12 col-sm-6 col-lg-4 reveal">
-                    <div class="cookie-card">
-                        <div class="cookie-card-img" style="background:linear-gradient(135deg,#3a1a00,#c87020);">
-                            🍋
-                        </div>
-                        <div class="cookie-card-body">
-                            <div class="stars">★★★★☆</div>
-                            <h5>Lemon Zest Dream</h5>
-                            <p>Zingy lemon curd meets buttery shortbread — sunshine in every single bite.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="cookie-price">$3.89 <span>/ piece</span></div>
-                                <button class="btn-add"><i class="bi bi-plus"></i> Add</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 6 -->
-                <div class="col-12 col-sm-6 col-lg-4 reveal">
-                    <div class="cookie-card">
-                        <div class="cookie-card-img" style="background:linear-gradient(135deg,#4a0020,#c02060);">
-                            🍓
-                            <span class="cookie-badge" style="background:#c02060;">Limited</span>
-                        </div>
-                        <div class="cookie-card-body">
-                            <div class="stars">★★★★★</div>
-                            <h5>Strawberry Swirl</h5>
-                            <p>Real strawberry jam ribboned through white chocolate chip cookie dough. Pure bliss.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="cookie-price">$4.99 <span>/ piece</span></div>
-                                <button class="btn-add"><i class="bi bi-plus"></i> Add</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    </div >
+    </div >
+    </section >
     <!-- ═══════════════ PROCESS ═══════════════ -->
-    <section class="process-section" id="process">
-        <div class="container">
-            <div class="text-center mb-5 reveal">
-                <p class="section-eyebrow">How We Bake</p>
-                <h2 class="section-title">From <em>Oven</em> to Your Door</h2>
-                <div class="divider mx-auto" style="background:var(--accent);"></div>
-            </div>
-            <div class="row g-4">
-                <div class="col-6 col-lg-3 reveal">
-                    <div class="process-step">
-                        <div class="process-num">1</div>
-                        <span class="process-icon">🌾</span>
-                        <h5>Source Finest</h5>
-                        <p>We hand-pick organic, locally-sourced ingredients every single morning.</p>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 reveal">
-                    <div class="process-step">
-                        <div class="process-num">2</div>
-                        <span class="process-icon">🥣</span>
-                        <h5>Mix With Love</h5>
-                        <p>Our bakers fold each batch by hand — no machines, no shortcuts, no compromises.</p>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 reveal">
-                    <div class="process-step">
-                        <div class="process-num">3</div>
-                        <span class="process-icon">🔥</span>
-                        <h5>Stone-Oven Bake</h5>
-                        <p>Baked at the perfect temperature for that iconic crisp edge and chewy center.</p>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-3 reveal">
-                    <div class="process-step">
-                        <div class="process-num">4</div>
-                        <span class="process-icon">📦</span>
-                        <h5>Rush to You</h5>
-                        <p>Packed fresh and delivered same-day so every cookie arrives at peak deliciousness.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="process-section" id="process" >
+    <div class="container" >
+    <div class="text-center mb-5 reveal" >
+    <p class="section-eyebrow" > How We Bake</p >
+    <h2 class="section-title" > From <em > Oven</em > to Your Door</h2 >
+    <div class="divider mx-auto" style="background:var(--accent);" > </div >
+    </div >
+    <div class="row g-4" >
+    <div class="col-6 col-lg-3 reveal" >
+    <div class="process-step" >
+    <div class="process-num" > 1</div >
+    <span class="process-icon" > 🌾</span >
+    <h5 > Source Finest</h5 >
+    <p > We hand-pick organic, locally-sourced ingredients every single morning.</p >
+    </div >
+    </div >
+    <div class="col-6 col-lg-3 reveal" >
+    <div class="process-step" >
+    <div class="process-num" > 2</div >
+    <span class="process-icon" > 🥣</span >
+    <h5 > Mix With Love</h5 >
+    <p > Our bakers fold each batch by hand — no machines, no shortcuts, no compromises.</p >
+    </div >
+    </div >
+    <div class="col-6 col-lg-3 reveal" >
+    <div class="process-step" >
+    <div class="process-num" > 3</div >
+    <span class="process-icon" > 🔥</span >
+    <h5 > Stone-Oven Bake</h5 >
+    <p > Baked at the perfect temperature for that iconic crisp edge and chewy center.</p >
+    </div >
+    </div >
+    <div class="col-6 col-lg-3 reveal" >
+    <div class="process-step" >
+    <div class="process-num" > 4</div >
+    <span class="process-icon" > 📦</span >
+    <h5 > Rush to You</h5 >
+    <p > Packed fresh and delivered same-day so every cookie arrives at peak deliciousness.</p >
+    </div >
+    </div >
+    </div >
+    </div >
+    </section >
     <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
-    <section class="testimonial-section" id="testimonials">
-        <div class="container">
-            <div class="text-center mb-5 reveal">
-                <p class="section-eyebrow">Reviews</p>
-                <h2 class="section-title">Cookie <em>Lovers</em> Speak</h2>
-                <div class="divider mx-auto"></div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4 reveal">
-                    <div class="testi-card">
-                        <div class="testi-quote">"</div>
-                        <p>These cookies are absolutely insane. I ordered the hazelnut and it disappeared in 5 minutes. My family is demanding another box immediately.</p>
-                        <div class="testi-author">
-                            <div class="testi-avatar">😍</div>
-                            <div class="testi-author-info">
-                                <strong>Sarah M.</strong>
-                                <span>⭐⭐⭐⭐⭐ Verified Buyer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 reveal">
-                    <div class="testi-card">
-                        <div class="testi-quote">"</div>
-                        <p>I've tried cookies from 20 different bakeries. CrumbLux is on a completely different level. The chocolate chip alone is worth the flight here.</p>
-                        <div class="testi-author">
-                            <div class="testi-avatar">🤤</div>
-                            <div class="testi-author-info">
-                                <strong>James P.</strong>
-                                <span>⭐⭐⭐⭐⭐ Verified Buyer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 reveal">
-                    <div class="testi-card">
-                        <div class="testi-quote">"</div>
-                        <p>Ordered for my daughter's birthday. Everyone asked where we got them. We ended up ordering 4 more boxes that same night. Legendary stuff!</p>
-                        <div class="testi-author">
-                            <div class="testi-avatar">🎉</div>
-                            <div class="testi-author-info">
-                                <strong>Aisha K.</strong>
-                                <span>⭐⭐⭐⭐⭐ Verified Buyer</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="testimonial-section" id="testimonials" >
+    <div class="container" >
+    <div class="text-center mb-5 reveal" >
+    <p class="section-eyebrow" > Reviews</p >
+    <h2 class="section-title" > Cookie <em > Lovers</em > Speak</h2 >
+    <div class="divider mx-auto" > </div >
+    </div >
+    <div class="row g-4" >
+    <div class="col-md-4 reveal" >
+    <div class="testi-card" >
+    <div class="testi-quote" > "</div>
+    <p > These cookies are absolutely insane. I ordered the hazelnut and it disappeared in 5 minutes. My family is demanding another box immediately.</p >
+    <div class="testi-author" >
+    <div class="testi-avatar" > 😍</div >
+    <div class="testi-author-info" >
+    <strong > Sarah M.</strong >
+    <span > ⭐⭐⭐⭐⭐ Verified Buyer</span >
+    </div >
+    </div >
+    </div >
+    </div >
+    <div class="col-md-4 reveal" >
+    <div class="testi-card" >
+    <div class="testi-quote" > "</div>
+    <p > I've tried cookies from 20 different bakeries. CrumbLux is on a completely different level. The chocolate chip alone is worth the flight here.</p>
+    <div class="testi-author" >
+    <div class="testi-avatar" > 🤤</div >
+    <div class="testi-author-info" >
+    <strong > James P.</strong >
+    <span > ⭐⭐⭐⭐⭐ Verified Buyer</span >
+    </div >
+    </div >
+    </div >
+    </div >
+    <div class="col-md-4 reveal" >
+    <div class="testi-card" >
+    <div class="testi-quote" > "</div>
+    <p > Ordered for my daughter's birthday. Everyone asked where we got them. We ended up ordering 4 more boxes that same night. Legendary stuff!</p>
+    <div class="testi-author" >
+    <div class="testi-avatar" > 🎉</div >
+    <div class="testi-author-info" >
+    <strong > Aisha K.</strong >
+    <span > ⭐⭐⭐⭐⭐ Verified Buyer</span >
+    </div >
+    </div >
+    </div >
+    </div >
+    </div >
+    </div >
+    </section >
     <!-- ═══════════════ NEWSLETTER ═══════════════ -->
-    <section class="newsletter-section" id="order">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="newsletter-box text-center reveal">
-                        <p class="section-eyebrow" style="color:var(--accent);">Stay In The Loop</p>
-                        <h2 class="section-title mb-3" style="color:var(--cream);">Get Fresh Deals <em>Weekly</em></h2>
-                        <p style="color:rgba(253,246,236,.55);margin-bottom:2rem;">Join 12,000+ cookie lovers and get exclusive drops, seasonal flavors & discounts straight to your inbox.</p>
-                        <div class="row g-3 justify-content-center">
-                            <div class="col-sm-8">
-                                <input type="email" class="newsletter-input" placeholder="your@email.com" />
-                            </div>
-                            <div class="col-sm-4">
-                                <button class="btn-primary-custom w-100 justify-content-center" style="border-radius:50px;">
-                                    Subscribe <i class="bi bi-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <p style="color:rgba(253,246,236,.3);font-size:.8rem;margin-top:1rem;">No spam. Unsubscribe any time. 🍪</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="newsletter-section" id="order" >
+    <div class="container" >
+    <div class="row justify-content-center" >
+    <div class="col-lg-8" >
+    <div class="newsletter-box text-center reveal" >
+    <p class="section-eyebrow" style="color:var(--accent);" > Stay In The Loop</p >
+    <h2 class="section-title mb-3" style="color:var(--cream);" > Get Fresh Deals <em > Weekly</em > </h2 >
+    <p style="color:rgba(253,246,236,.55);margin-bottom:2rem;" > Join 12, 000 + cookie lovers and get exclusive drops, seasonal flavors & discounts straight to your inbox.</p >
+    <div class="row g-3 justify-content-center" >
+    <div class="col-sm-8" >
+    <input type="email" class="newsletter-input" placeholder="your@email.com" / >
+    </div >
+    <div class="col-sm-4" >
+    <button class="btn-primary-custom w-100 justify-content-center" style="border-radius:50px;" >
+    Subscribe <i class="bi bi-arrow-right" > </i >
+    </button >
+    </div >
+    </div >
+    <p style="color:rgba(253,246,236,.3);font-size:.8rem;margin-top:1rem;" > No spam. Unsubscribe any time. 🍪</p >
+    </div >
+    </div >
+    </div >
+    </div >
+    </section >
     <!-- ═══════════════ FOOTER ═══════════════ -->
-    <footer>
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4">
-                    <div class="footer-brand mb-3">Crumb<span>Lux</span></div>
-                    <p>Handcrafted artisan cookies made with love, baked with passion, delivered with joy since 2010.</p>
-                    <div class="mt-3">
-                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-2">
-                    <div class="footer-title">Navigate</div>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#about">Our Story</a></li>
-                        <li><a href="#process">Process</a></li>
-                        <li><a href="#testimonials">Reviews</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2">
-                    <div class="footer-title">Shop</div>
-                    <ul class="footer-links">
-                        <li><a href="#">All Cookies</a></li>
-                        <li><a href="#">Gift Boxes</a></li>
-                        <li><a href="#">Seasonal</a></li>
-                        <li><a href="#">Corporate</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <div class="footer-title">Visit Us</div>
-                    <ul class="footer-links">
-                        <li><a href="#">📍 42 Baker Street, NY 10001</a></li>
-                        <li><a href="#">📞 +1 (555) 123-4567</a></li>
-                        <li><a href="#">✉️ hello@crumblux.com</a></li>
-                        <li><a href="#">🕐 Mon–Sat: 8am – 8pm</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center">
-                <span>© 2024 CrumbLux. All rights reserved.</span>
-                <span>Made with 🍪 & ❤️</span>
-            </div>
-        </div>
-    </footer>
+    <footer >
+    <div class="container" >
+    <div class="row g-5" >
+    <div class="col-lg-4" >
+    <div class="footer-brand mb-3" > Crumb<span > Lux</span > </div >
+    <p > Handcrafted artisan cookies made with love, baked with passion, delivered with joy since 2010.</p >
+    <div class="mt-3" >
+    <a href="#" class="social-icon" > <i class="bi bi-instagram" > </i > </a >
+    <a href="#" class="social-icon" > <i class="bi bi-facebook" > </i > </a >
+    <a href="#" class="social-icon" > <i class="bi bi-twitter-x" > </i > </a >
+    <a href="#" class="social-icon" > <i class="bi bi-tiktok" > </i > </a >
+    </div >
+    </div >
+    <div class="col-6 col-lg-2" >
+    <div class="footer-title" > Navigate</div >
+    <ul class="footer-links" >
+    <li > <a href="#home" > Home</a > </li >
+    <li > <a href="#menu" > Menu</a > </li >
+    <li > <a href="#about" > Our Story</a > </li >
+    <li > <a href="#process" > Process</a > </li >
+    <li > <a href="#testimonials" > Reviews</a > </li >
+    </ul >
+    </div >
+    <div class="col-6 col-lg-2" >
+    <div class="footer-title" > Shop</div >
+    <ul class="footer-links" >
+    <li > <a href="#" > All Cookies</a > </li >
+    <li > <a href="#" > Gift Boxes</a > </li >
+    <li > <a href="#" > Seasonal</a > </li >
+    <li > <a href="#" > Corporate</a > </li >
+    </ul >
+    </div >
+    <div class="col-lg-4" >
+    <div class="footer-title" > Visit Us</div >
+    <ul class="footer-links" >
+    <li > <a href="#" > 📍 42 Baker Street, NY 10001</a > </li >
+    <li > <a href="#" > 📞 +1 (555) 123-4567</a > </li >
+    <li > <a href="#" > ✉️ hello@crumblux.com</a > </li >
+    <li > <a href="#" > 🕐 Mon–Sat: 8am – 8pm</a > </li >
+    </ul >
+    </div >
+    </div >
+    <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center" >
+    <span > © 2024 CrumbLux. All rights reserved.</span >
+    <span > Made with 🍪 & ❤️</span >
+    </div >
+    </div >
+    </footer >
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // ── Scroll Reveal ──
-        const reveals = document.querySelectorAll('.reveal');
-        const io = new IntersectionObserver((entries) => {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" > </script >
+    <script >
+    // ── Scroll Reveal ──
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
             entries.forEach((e, i) => {
                 if (e.isIntersecting) {
                     e.target.style.transitionDelay = (i * 0.08) + 's';
@@ -455,10 +474,10 @@ navMenu" aria-label="Toggle navigation">
                 }
             });
         }, { threshold: 0.12 });
-        reveals.forEach(el => io.observe(el));
+    reveals.forEach(el => io.observe(el));
 
-        // ── Add to cart click feedback ──
-        document.querySelectorAll('.btn-add').forEach(btn => {
+    // ── Add to cart click feedback ──
+    document.querySelectorAll('.btn-add').forEach(btn => {
             btn.addEventListener('click', function () {
                 const orig = this.innerHTML;
                 this.innerHTML = '<i class="bi bi-check2"></i> Added!';
@@ -470,8 +489,8 @@ navMenu" aria-label="Toggle navigation">
             });
         });
 
-        // ── Subscribe button feedback ──
-        document.querySelector('.newsletter-section .btn-primary-custom').addEventListener('click', function () {
+    // ── Subscribe button feedback ──
+    document.querySelector('.newsletter-section .btn-primary-custom').addEventListener('click', function () {
             const input = document.querySelector('.newsletter-input');
             if (input.value.includes('@')) {
                 this.innerHTML = '✓ You\'re In!';
@@ -482,9 +501,6 @@ navMenu" aria-label="Toggle navigation">
                 setTimeout(() => input.style.borderColor = '', 1500);
             }
         });
-    </script>
-</body>
-</html>
-
-
-
+    </script >
+    </body >
+    </html >
