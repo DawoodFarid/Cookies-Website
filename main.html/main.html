@@ -127,6 +127,29 @@
             background: var(--mid);
             transform: translateY(-1px);
         }
+    /* ─── HERO ─── */
+    .hero {
+        min-height: 100vh;
+        background: var(--dark);
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .hero-bg-pattern {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse 80% 80% at 70% 50%, #3D2003 0%, #1C1009 100%);
+    }
+    /* Decorative circles */
+    .hero-circle {
+        position: absolute;
+        border-radius: 50%;
+        opacity: .12;
+        background: var(--caramel);
+        animation: floatCircle 8s ease-in-out infinite;
+    }
 
     <body >
     <!-- ═══════════════ NAVBAR ═══════════════ -->
