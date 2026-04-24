@@ -442,6 +442,18 @@ navMenu" aria-label="Toggle navigation">
         </div>
     </footer>
 
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // ── Scroll Reveal ──
+        const reveals = document.querySelectorAll('.reveal');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((e, i) => {
+                if (e.isIntersecting) {
+                    e.target.style.transitionDelay = (i * 0.08) + 's';
+                    e.target.classList.add('visible');
+                    io.unobserve(e.target);
+                }
+
+</body >
+</html >
 
